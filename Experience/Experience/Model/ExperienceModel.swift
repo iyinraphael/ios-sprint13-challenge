@@ -16,9 +16,9 @@ class Experience:  NSObject,MKAnnotation {
     var coordinate: CLLocationCoordinate2D
     let audio: URL
     let video: URL
-    let image: UIImage
+    let image: Data
     
-    init(title: String, coordinate: CLLocationCoordinate2D? = nil, audio: URL, video: URL, image: UIImage){
+    init(title: String, coordinate: CLLocationCoordinate2D? = nil, audio: URL, video: URL, image: Data){
         self.title = title
         self.coordinate = coordinate ?? CLLocationCoordinate2D(latitude: 37.7749, longitude: 122.4194)
         self.audio = audio

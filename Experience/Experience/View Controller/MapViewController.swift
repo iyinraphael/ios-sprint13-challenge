@@ -13,20 +13,31 @@ class MapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        locationManager.requestWhenInUseAuthorization()
+        let userTrackingButton = MKUserTrackingButton(mapView: mapView)
+        userTrackingButton.translatesAutoresizingMaskIntoConstraints = false
+        mapView.addSubview(userTrackingButton)
+        userTrackingButton.leftAnchor.constraint(equalTo: mapView.leftAnchor, constant: 20).isActive = true
+        userTrackingButton.bottomAnchor.constraint(equalTo: mapView.bottomAnchor, constant: -20).isActive = true
+    }
+    
+    var coordinate: CLLocationCoordinate2D?
+    var experienceController = ExperienceController()
+    let locationManager = CLLocationManager()
+    @IBAction func addExperience(_ sender: Any) {
     }
     
     @IBOutlet weak var mapView: MKMapView!
     
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "addExperienceSegue" {
+            guard let coordinate = coordinate,
+                let detailVC = segue.destination as? ExperienceViewController else { return }
+            
+            detailVC.coordinate = coordinate
+            detailVC.expericienceController = experienceController
+        }
     }
-    */
 
 }
