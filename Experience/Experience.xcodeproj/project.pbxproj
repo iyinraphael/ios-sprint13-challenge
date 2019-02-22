@@ -14,6 +14,7 @@
 		EB1A12682220553900333303 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A12672220553900333303 /* MapViewController.swift */; };
 		EB1A126A222055A300333303 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A1269222055A300333303 /* ExperienceViewController.swift */; };
 		EB1A126C222056DF00333303 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A126B222056DF00333303 /* RecordViewController.swift */; };
+		EB1A126E222057EA00333303 /* ExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A126D222057EA00333303 /* ExperienceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EB1A12672220553900333303 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EB1A1269222055A300333303 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
 		EB1A126B222056DF00333303 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		EB1A126D222057EA00333303 /* ExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		EB1A1266222046C900333303 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EB1A126D222057EA00333303 /* ExperienceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB1A126A222055A300333303 /* ExperienceViewController.swift in Sources */,
+				EB1A126E222057EA00333303 /* ExperienceModel.swift in Sources */,
 				EB1A1253222043B000333303 /* AppDelegate.swift in Sources */,
 				EB1A12682220553900333303 /* MapViewController.swift in Sources */,
 				EB1A126C222056DF00333303 /* RecordViewController.swift in Sources */,
